@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>인부 작업 페이지</title>
+    <link rel="stylesheet" href="/css/worker.css" />
+  </head>
+  <body
+    style="
+      background-image: url('./img/blue.jpg');
+      background-size: cover;
+      background-position: center;
+    "
+  >
+    <main>
+      <div class="container">
+        <!-- 제목 -->
+        <header class="title">
+          <h1>👷‍♂️ 오늘의 작업 정보</h1>
+        </header>
+
+        <!-- 왼쪽 묶은 박스 -->
+        <aside class="left-sidebar">
+          <div class="left-box">
+            <section class="weather">
+              <h2>🌤️ 오늘의 날씨</h2>
+              <p>📍 서울: 맑음, 최고 23°C / 최저 14°C</p>
+            </section>
+
+            <section class="safety">
+              <h2>🦺 오늘의 안전 수칙</h2>
+              <ul>
+                <li>작업 전 장비 점검 필수</li>
+                <li>안전모 및 장갑 착용 확인</li>
+                <li>비상 대피로 사전 확인</li>
+              </ul>
+            </section>
+
+            <section class="support-message">
+              <h2>💬 오늘의 응원 메시지</h2>
+              <p id="quote">오늘도 무사고! 모두의 안전을 응원합니다.</p>
+            </section>
+          </div>
+        </aside>
+
+        <!-- 중앙: 묶지 않음 -->
+        <main class="main-content">
+          <section class="gear-check" style="flex: 7">
+            <h2>🛠️ 오늘 챙겨야 할 장비</h2>
+            <ul class="gear-list">
+              <li>✅ 안전모</li>
+              <li>✅ 안전화</li>
+              <li>✅ 보호안경</li>
+              <li>✅ 방진마스크</li>
+              <li>✅ 반사 조끼</li>
+              <li>✅ 귀마개</li>
+              <li>✅ 무전기</li>
+            </ul>
+          </section>
+
+          <section class="equipment-check" style="flex: 3">
+            <h2>⚠️ 장비 착용 상태 확인</h2>
+            <p>🚨 김철수: 안전모 미착용</p>
+            <p>⚠️ 박영희: 장갑 미착용</p>
+          </section>
+        </main>
+
+        <!-- 오른쪽 묶은 박스 -->
+        <aside class="right-sidebar">
+          <div class="right-box">
+            <section class="news">
+              <h2>📢 산업 뉴스</h2>
+              <p>🌍 철강업계, 탄소중립 실천 선언</p>
+              <p>🦺 건설현장 스마트헬멧 도입 추진</p>
+            </section>
+
+            <section class="accident-summary">
+              <h2>🚧 어제의 사고 정보</h2>
+              <ul>
+                <li>⚠️ 기계 사용 중 손가락 끼임</li>
+                <li>🔴 추락 사고 발생 - 안전줄 확인!</li>
+              </ul>
+            </section>
+          </div>
+        </aside>
+
+        <!-- 푸터 -->
+        <footer class="footer">
+          <p>📞 문의: 010-1234-5678 | 📧 Kogannam@naver.com</p>
+          <p>🌐 QR 코드: <img src="" alt="QR 코드" /></p>
+          <p>© Korea IT group B</p>
+        </footer>
+      </div>
+
+      <script>
+        const quotes = [
+          "오늘도 무사고! 모두의 안전을 응원합니다.",
+          "작은 실천이 큰 안전을 만듭니다.",
+          "주의 한 번이 생명을 지킵니다.",
+          "당신의 한 걸음이 모두를 지킵니다.",
+          "건강하게, 안전하게, 함께 갑시다!",
+        ];
+        document.getElementById("quote").textContent =
+          quotes[Math.floor(Math.random() * quotes.length)];
+      </script>
+  </body>
+</html>

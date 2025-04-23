@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "MarinesBold";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2502-1@1.0/MarinesBold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  font-family: "MarinesBold";
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 40px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main {
+  width: 90vh;
+}
+main {
+  flex-direction: column;
+  width: 450px; /* 화면 너비의 90% */
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+select,
+textarea,
+button {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 5px;
+}
+
+.form-group.inline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type="color"] {
+  width: 50px;
+  height: 40px;
+  padding: 0;
+  border: none;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+legend {
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+button[type="submit"] {
+  background-color: #5f6fa9;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #2348b5;
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 20px;
+  color: #777;
+}
+
+.button {
+  display: flex;
+  gap: 150px;
+  flex-wrap: wrap; /* 모바일 대응 */
+  justify-content: center;
+}
+
+.button button {
+  width: 300px;
+  height: 200px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #5f6fa9;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.button button:hover {
+  background-color: #2348b5;
+}
